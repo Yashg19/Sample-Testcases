@@ -90,6 +90,12 @@ function createFDR(graph) {
 	});
 }
 
+function simulateClick() {
+    first = 0;
+    click(node[0][center].__data__, 0);
+    force.start();
+}
+
 function seedInitialPlacementofL1Nodes(center) {
     // find the number of groups
     var i;
